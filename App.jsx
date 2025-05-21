@@ -1,6 +1,7 @@
 
 
 const App = () => {
+    const used = new Set();
     const defaults = [
         {id: 4,   name: 'Charmander',   type: 'fire',       base_experience: 62},
         {id: 7,   name: 'Squirtle',     type: 'water',      base_experience: 63},
@@ -14,18 +15,7 @@ const App = () => {
 
     return(
         <>
-            <h1 id="title">Pokedex</h1>
-            <div id="container">
-                {defaults.map(item => (
-                    <Card 
-                        key             = {item.id}
-                        id              = {item.id}
-                        name            = {item.name}
-                        type            = {item.type}
-                        base_experience = {item.base_experience}
-                    />
-                ))}
-            </div>
+            <PokeGame used={used} defaults={defaults}/>
         </>
     )
 }
