@@ -1,0 +1,53 @@
+#deck {
+    position: relative;
+    border: 3px solid white;
+    border-radius: 12px;
+    box-shadow:
+        0 0 1px black,
+        0 0 1px black,
+        0 0 1px black,
+        0 2px 4px hsla(0, 0%, 0%, .25),
+        inset 0 0 1px black,
+        inset 0 0 1px black,
+        inset 0 0 1px black,
+        inset 0 0 2px black;
+
+    /* backdrop-filter: blur(2px); */
+    background-color: hsla(0, 0%, 100%, .25);
+
+    width: 260px;
+    height: 390px;
+    padding: 0 30px;
+
+    align-self: flex-end;
+}
+
+#deck-name {
+    position: absolute;
+    translate: -160px 165px;
+    rotate: -90deg;
+
+    font-size: 2.5em;
+    color: white;
+
+    padding: 0 30px;
+    border: 3px solid white;
+    border-radius: 12px;
+
+    background-color: hsla(0, 0%, 100%, .25);
+    backdrop-filter: blur(4px);
+
+    text-shadow:
+        0 0 2px black,
+        0 0 2px black,
+        0 0 2px black,
+        0 0 2px black;
+    box-shadow:
+        0 0 1px black,
+        0 0 1px black,
+        0 0 1px black,
+        -4px 0 4px hsla(0, 0%, 0%, .25);
+
+    user-select: none;
+    pointer-events: none;
+}

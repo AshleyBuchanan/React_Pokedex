@@ -1,4 +1,6 @@
 import Hand from './Hand.jsx';
+import Deck from './Deck.jsx';
+
 const PokeGame = ({defaults}) => {
     //const shuffled = [...defaults].sort(() => Math.random() - 0.5);
 
@@ -20,6 +22,7 @@ const PokeGame = ({defaults}) => {
             <div id="title">Pokedex</div>
             <div id="container">
                 <Hand handName="One" cards={hand1}></Hand>
+                <Deck ></Deck>
                 <Hand handName="Two" cards={hand2}></Hand>
             </div>
         </>

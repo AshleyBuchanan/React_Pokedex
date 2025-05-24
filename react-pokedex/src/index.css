@@ -38,7 +38,7 @@ img {
 }
 
 #container {
-    width: 1140px;
+    width: 1150px;
     height: 100%;
     margin: auto;
     display: flex;
@@ -54,6 +54,7 @@ div.hand {
 
     display: flex;
     flex-direction: row;
+    align-self: flex-end;
     align-items: center;
     justify-content: center;
 
@@ -106,7 +107,7 @@ div.hand-name {
     pointer-events: none;
 }
 
-.hand:nth-of-type(2) .hand-name {
+div.hand:nth-of-type(3) .hand-name {
     translate: 400px 70%;
 }
 
@@ -133,7 +134,7 @@ div.card {
         inset 0 0 5px rgba(255, 255, 255, 0.2),
         0 0 30px rgba(255, 220, 100, 0.2);
 
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: all 0.2s ease-in-out;
 }
 
 div.card:hover {
